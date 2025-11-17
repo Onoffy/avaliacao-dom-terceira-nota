@@ -43,8 +43,13 @@ body {
     width: 10vw;
 }
 
+.button:active {
+    background-color: grey;
+}
+
 .result__message {
     margin-top: 0.5em;
     font-size: 2em;
     font-weight: bold;
+    color: red;
 }
