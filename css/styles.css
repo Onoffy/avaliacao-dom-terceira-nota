@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    background-color: #f8f9fa;
+    color: #0b090a;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    margin: 15vh 15vw;
+    padding: 2em;
+    font-size: 1.5em;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 20px #0b090a60;
+    border-radius: 1em;
+}
+
+.inputs__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.inputs__container input {
+    border: solid 1px;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.button {
+    border: solid 1px;
+    border-radius: 1em;
+    padding: 0.3em;
+    width: 10vw;
+}
+
+.result__message {
+    margin-top: 0.5em;
+    font-size: 2em;
+    font-weight: bold;
+}
