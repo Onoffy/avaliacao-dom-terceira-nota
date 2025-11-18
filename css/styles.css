@@ -7,7 +7,7 @@ body {
     font-family: "Josefin Sans", sans-serif;
     font-weight: normal;
     line-height: 1.5;
-    background-color: #ebebeb;
+    background-color: #48bfe3;
     color: #0b090a;
 }
 
@@ -45,6 +45,13 @@ button {
 
 .inputs__container input:focus {
     outline-color: #48bfe3;
+}
+
+.checkbox__container {
+    display: flex;
+    justify-content: left;
+    gap: 0.4em;
+    font-size: 0.45em;
 }
 
 .button {

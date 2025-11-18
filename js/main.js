@@ -23,17 +23,31 @@ function mostrarResultado() {
         result.innerHTML = "LOGIN EFETUADO!";
         result.style.color = '#70e000';
         result.style.fontSize = '1.5em';
+        result.style.padding = '0';
     } else if (valorEmail === "" || valorSenha === "") {
         result.innerHTML = "PREENCHA TODOS OS CAMPOS!";
         result.style.color = '#c1121f';
         result.style.fontSize = '1.5em';
+        result.style.padding = '0';
     } else if (senha_valida === false) {
-        result.innerHTML = "SUA SENHA DEVE CONTER LETRAS MAIÚSCULAS E MINÚSCULAS, CARACTERES ESPECIAIS, NÚMEROS E TER PELO MENOS 6 CARACTERES!";
+        result.innerHTML = "SUA SENHA DEVE TER NO MÍNIMO 6 CARACTERES E INCLUIR PELO MENOS UMA LETRA MAIÚSCULA(A-Z), UMA MINÚSCULA(a-z), UM NÚMERO(0-9) E UM CARACTERE ESPECIAL($*&@#)!";
         result.style.color = '#6c757d';
         result.style.fontSize = '0.5em';
+        result.style.padding = '0 10em';
     } else {
         result.innerHTML = "E-MAIL INVÁLIDO!";
         result.style.color = '#c1121f';
         result.style.fontSize = '1.5em';
+        result.style.padding = '0';
+    }
+}
+
+function mostrarSenha() {
+    let checkbox = document.getElementById('reveal');
+
+    if (senha.type === "password") {
+        senha.type = "text";
+    } else {
+        senha.type = "password";
     }
 }
