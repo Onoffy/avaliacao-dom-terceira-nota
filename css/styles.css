@@ -6,9 +6,13 @@
 body {
     font-family: "Josefin Sans", sans-serif;
     font-weight: normal;
-    font-size: 1em;
-    background-color: #f8f9fa;
+    background-color: #ebebeb;
     color: #0b090a;
+}
+
+input,
+button {
+    font-family: inherit;
 }
 
 .main__container {
@@ -18,38 +22,47 @@ body {
     gap: 0.5em;
     margin: 15vh 15vw;
     padding: 2em;
-    font-size: 1.5em;
+    font-size: 2em;
     background-color: #f8f9fa;
-    box-shadow: 0 0 20px #0b090a60;
-    border-radius: 1em;
+    box-shadow: 0 0 10px #0b090a60;
 }
 
 .inputs__container {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    width: 60%;
+    max-width: 350px;
+    gap: 0.4em;
 }
 
 .inputs__container input {
-    border: solid 1px;
+    border: transparent;
     border-radius: 1em;
-    padding: 0.5em;
+    padding: 0.8em;
+    background-color: #ebebeb;
+}
+
+.inputs__container input:focus {
+    outline-color: #48bfe3;
 }
 
 .button {
-    border: solid 1px;
-    border-radius: 1em;
-    padding: 0.3em;
-    width: 10vw;
+    border: transparent;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    margin-top: 1em;
+    width: 40%;
+    max-width: 180px;
+    cursor: pointer;
+    background-color: #48bfe3;
 }
 
 .button:active {
-    background-color: grey;
+    background-color: #3aa1c0;
 }
 
 .result__message {
-    margin-top: 0.5em;
     font-size: 2em;
     font-weight: bold;
-    color: red;
+    text-align: center;
 }
