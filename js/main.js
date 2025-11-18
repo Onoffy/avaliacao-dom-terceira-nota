@@ -43,8 +43,6 @@ function mostrarResultado() {
 }
 
 function mostrarSenha() {
-    let checkbox = document.getElementById('reveal');
-
     if (senha.type === "password") {
         senha.type = "text";
     } else {
