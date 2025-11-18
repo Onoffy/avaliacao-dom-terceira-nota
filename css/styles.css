@@ -61,8 +61,16 @@ button {
     background-color: #3aa1c0;
 }
 
-.result__message {
+.error__message {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
+    color: #c1121f;
+}
+
+.success__message {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #70e000;
 }
