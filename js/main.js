@@ -1,7 +1,6 @@
 let email = document.getElementById('email');
 let senha = document.getElementById('senha');
-let success = document.getElementById('success');
-let error = document.getElementById('error_message');
+let result = document.getElementById('success');
 
 function mostrarResultado() {
     const valorEmail = email.value;
@@ -21,29 +20,20 @@ function mostrarResultado() {
     let senha_valida = validarSenha(valorSenha);
 
     if ((email_valido && senha_valida) && (valorEmail.length >= 10)) {
-        success.style.marginTop = '0.4em';
-        success.innerHTML = "LOGIN EFETUADO!";
-        error.innerHTML = "";
-        error.style.marginTop = '0';
-    } else if (email_valido) {
-        error.style.marginTop = '0.3em';
-        error.innerHTML = "PREENCHA SUA SENHA!";
-        success.innerHTML = "";
-        success.style.marginTop = '0';
-    } else if (senha_valida) {
-        error.style.marginTop = '0.3em';
-        error.innerHTML = "PREENCHA SEU E-MAIL!";
-        success.innerHTML = "";
-        success.style.marginTop = '0';
-    } else if (senha_valida && valorSenha.length < 6) {
-        error.style.marginTop = '0.3em';
-        error.innerHTML = "SUA SENHA PRECISA TER AO MENOS 6 CARACTERES!";
-        success.innerHTML = "";
-        success.style.marginTop = '0';
+        result.innerHTML = "LOGIN EFETUADO!";
+        result.style.color = '#70e000';
+        result.style.fontSize = '1.5em';
+    } else if (valorEmail === "" || valorSenha === "") {
+        result.innerHTML = "PREENCHA TODOS OS CAMPOS!";
+        result.style.color = '#c1121f';
+        result.style.fontSize = '1.5em';
+    } else if (senha_valida === false) {
+        result.innerHTML = "SUA SENHA DEVE CONTER LETRAS MAIÚSCULAS E MINÚSCULAS, CARACTERES ESPECIAIS, NÚMEROS E TER PELO MENOS 6 CARACTERES!";
+        result.style.color = '#6c757d';
+        result.style.fontSize = '0.5em';
     } else {
-        error.style.marginTop = '0.3em';
-        error.innerHTML = "E-MAIL INVÁLIDO!";
-        success.innerHTML = "";
-        success.style.marginTop = '0';
+        result.innerHTML = "E-MAIL INVÁLIDO!";
+        result.style.color = '#c1121f';
+        result.style.fontSize = '1.5em';
     }
 }

@@ -6,6 +6,7 @@
 body {
     font-family: "Josefin Sans", sans-serif;
     font-weight: normal;
+    line-height: 1.5;
     background-color: #ebebeb;
     color: #0b090a;
 }
@@ -21,7 +22,7 @@ button {
     align-items: center;
     gap: 0.5em;
     margin: 15vh 15vw;
-    padding: 2em;
+    padding: 1.5em;
     font-size: 2em;
     background-color: #f8f9fa;
     box-shadow: 0 0 10px #0b090a60;
@@ -50,7 +51,7 @@ button {
     border: transparent;
     padding: 0.5em;
     border-radius: 0.2em;
-    margin-top: 1em;
+    margin: 1em 0;
     width: 40%;
     max-width: 180px;
     cursor: pointer;
@@ -61,15 +62,8 @@ button {
     background-color: #3aa1c0;
 }
 
-.error__message {
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    color: #c1121f;
-}
-
 .success__message {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     color: #70e000;
