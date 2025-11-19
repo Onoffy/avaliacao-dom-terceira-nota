@@ -22,21 +22,21 @@ function mostrarResultado() {
     if ((email_valido && senha_valida) && (valorEmail.length >= 10)) {
         result.innerHTML = "LOGIN EFETUADO!";
         result.style.color = '#70e000';
-        result.style.fontSize = '1.2em';
+        result.style.fontSize = '1.4em';
         result.style.padding = '0';
     } else if (valorEmail === "" || valorSenha === "") {
         result.innerHTML = "PREENCHA TODOS OS CAMPOS!";
         result.style.color = '#c1121f';
-        result.style.fontSize = '1.2em';
+        result.style.fontSize = '1.4em';
         result.style.padding = '0';
     } else if (senha_valida === false) {
         result.innerHTML = "SUA SENHA DEVE TER NO MÍNIMO 6 CARACTERES E INCLUIR PELO MENOS UMA LETRA MAIÚSCULA(A-Z), UMA MINÚSCULA(a-z), UM NÚMERO(0-9) E UM CARACTERE ESPECIAL($*&@#)!";
         result.style.color = '#6c757d';
-        result.style.fontSize = '0.5em';
+        result.style.fontSize = '0.6em';
     } else {
         result.innerHTML = "E-MAIL INVÁLIDO!";
         result.style.color = '#c1121f';
-        result.style.fontSize = '1.2em';
+        result.style.fontSize = '1.4em';
         result.style.padding = '0';
     }
 }
