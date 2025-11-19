@@ -32,7 +32,7 @@ function mostrarResultado() {
     } else if (senha_valida === false) {
         result.innerHTML = "SUA SENHA DEVE TER NO MÍNIMO 6 CARACTERES E INCLUIR PELO MENOS UMA LETRA MAIÚSCULA(A-Z), UMA MINÚSCULA(a-z), UM NÚMERO(0-9) E UM CARACTERE ESPECIAL($*&@#)!";
         result.style.color = '#6c757d';
-        result.style.fontSize = '0.6em';
+        result.style.fontSize = '0.4em';
     } else {
         result.innerHTML = "E-MAIL INVÁLIDO!";
         result.style.color = '#c1121f';
